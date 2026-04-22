@@ -1,0 +1,93 @@
+/*-- フォーム全体 --*/
+.authenticate {
+    width: 680px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: column;
+    padding: 108px;
+}
+
+/*-- タイトル「会員登録」--*/
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+/*-- ラベル --*/
+.entry-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0;
+}
+
+/*-- 入力フィールド --*/
+.input {
+    width: 680px;
+    height: 45px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 16px;
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 33px;
+}
+
+/*-- 各入力フィールド個別余白 --*/
+#email {
+    margin-bottom: 24px;
+}
+
+#password {
+    margin-bottom: 46px;
+}
+
+#password_confirmation {
+    margin-bottom: 93px;
+}
+
+
+/*-- エラーメッセージ --*/
+.form-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/*-- ボタン --*/
+.btn {
+    width: 680px;
+    height: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 5px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+}
+
+
+/*-- リンク「ログインはこちら」--*/
+.link {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    color: #0073CC;
+    text-align: center;
+    display: block;
+}

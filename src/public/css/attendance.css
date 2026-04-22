@@ -1,0 +1,116 @@
+/*-- ページ全体 --*/
+.attendance-wrap {
+    background-color: #F0EFF2;
+    min-height: 902px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 209px;
+}
+
+/*-- ステータスバッチ --*/
+.status {
+    width: 100px;
+    height: 40px;
+    background-color: #C8C8C8;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+/*-- 日付 --*/
+.attendance-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*-- 時刻 --*/
+.attendance-time {
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 91px;
+}
+
+/*-- ボタン共通 --*/
+.attendance-btn {
+    width: 221px;
+    height: 77px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+}
+
+/*-- 黒ボタン（出勤・退勤・休憩戻）--*/
+.attendance-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/*-- 白ボタン（休憩入）--*/
+.attendance-btn--sub {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.attendance-btn:hover,
+.attendance-btn--sub:hover {
+    opacity: 0.8;
+}
+
+/*-- ボタン 横並び--*/
+.attendance-btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    margin-top: 0;
+}
+
+/*-- フラッシュメッセージ --*/
+.flash-message {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #696969;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/*-- 退勤済メッセージ --*/
+.attendance-finish {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    color: #000000;
+    text-align: center;
+    margin-top: 91px;
+}

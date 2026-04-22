@@ -1,0 +1,118 @@
+/*-- ページ全体 --*/
+.list-wrap {
+    background-color: #f0EFF2;
+    min-height: 1900px;
+    padding-top: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-- タイトル --*/
+.list-title {
+    width: 900px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 53px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-title__bar {
+    color: #000000;
+}
+
+/*-- 月ナビゲーション --*/
+.list-nav {
+    width: 900px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-bottom: 61px;
+    box-sizing: border-box;
+}
+
+.list-nav__prev,
+.list-nav__next {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.list-nav__current {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/*-- テーブル全体 --*/
+.list-table {
+    width: 900px;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*-- テーブルヘッダー --*/
+.list-table thead th {
+    height: 31px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    color: #737373;
+    text-align: center;
+    padding: 0 8px;
+    border-bottom: 2px solid #E1E1E1;
+}
+
+/*-- テーブル行 --*/
+.list-table tbody tr {
+    height: 33px;
+    border-bottom: 2px solid #E1E1E1;
+}
+
+.list-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/*-- テーブルセル --*/
+.list-table tbody td {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    padding: 0 8px;
+}
+
+/*-- 詳細リンク --*/
+.list-table__link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.list-table__link:hover {
+    opacity: 0.6;
+}

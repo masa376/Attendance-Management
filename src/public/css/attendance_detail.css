@@ -1,0 +1,165 @@
+/*-- ページ全体 --*/
+.detail-wrap {
+    background-color: #F0EFF2;
+    min-height: 900px;
+    padding-top: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: calc((100% - 900px) / 2);
+    padding-right: calc((100% - 900px) / 2);
+}
+
+/*-- タイトル --*/
+.detail-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 53px;
+}
+
+.detail-title__bar {
+    color: #000000;
+}
+
+
+/*-- テーブル全体 --*/
+.detail-table {
+    width: 900px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+/*-- テーブル行 --*/
+.detail-table tbody tr {
+    border-bottom: 2px solid #E1E1E1;
+}
+
+.detail-table tr:last-child {
+    border-bottom: none;
+}
+
+/*-- 名前行 --*/
+.detail-table tbody tr:nth-child(1) {
+    height: 79px;
+}
+
+/*-- 日付行 --*/
+.detail-table tbody tr:nth-child(2) {
+    height: 89px;
+}
+
+/*-- 出勤退勤・休憩行 --*/
+.detail-table tbody tr:nth-child(3),
+.detail-table tbody tr:nth-child(4),
+.detail-table tbody tr:nth-child(5) {
+    height: 95px;
+}
+
+/*-- ラベル列 --*/
+.detail-table__label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #737373;
+    padding-left: 24px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+/*-- 値列 --*/
+.detail-table__value {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    vertical-align: middle;
+    padding: 0 16px;
+}
+
+/*-- 時刻フィールド --*/
+.detail-table__value--time {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.detail-table__tilde {
+    font-size: 16px;
+    color: #000000;
+}
+
+/*-- 入力フィールド --*/
+.detail-input {
+    width: 103px;
+    height: 29px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/*-- テキストエリア（備考）--*/
+.detail-textarea {
+    width: 316px;
+    height: 72px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+/*-- 修正ボタン --*/
+.detail-btn {
+    width: 130px;
+    height: 50px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.detail-btn:hover {
+    opacity: 0.8;
+}
+
+/*-- 承認待ちメッセージ --*/
+.detail-pending {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: rgba(255, 0, 0, 0.5);
+    margin-top: 24px;
+    margin-left: auto;
+}
+
+/*-- エラーメッセージ --*/
+.detail-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}

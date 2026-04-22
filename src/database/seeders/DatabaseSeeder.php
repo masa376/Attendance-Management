@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            AdminUserSeeder::class, // 管理者（先に実行）
+            UserSeeder::class, // 一般ユーザー
+            AttendanceSeeder::class, // 勤怠データ
+        ]);
     }
 }

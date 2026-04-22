@@ -1,0 +1,28 @@
+<header class="header">
+    <div class="header_logo">
+        <a href="/"><img src="{{ asset('img/logo.png') }}" alt="ロゴ"></a>
+    </div>
+
+    @if (!in_array(Route::currentRouteName(), ['register', 'login', 'verification.notice']) )
+
+
+    <nav class="header_nav">
+        <ul>
+            @if (Auth::check())
+            <li><a href="{{ route('attendance.index') }}" class="header_button">勤怠</a></li>
+            <li><a href="{{ route('attendance.list') }}" class="header_button">勤怠一覧</a></li>
+            <li><a href="{{ route('stamp_correction_request.list') }}" class="header_button">申請</a></li>
+            <li>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button class="header_button">ログアウト</button>
+                </form>
+            </li>
+            @else
+            <li><a href="{{ route('login') }}">ログイン</a></li>
+            <li><a href="{{ route('register') }}">会員登録</a></li>
+            @endif
+        </ul>
+    </nav>
+    @endif
+</header>
