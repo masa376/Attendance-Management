@@ -3,18 +3,18 @@
 @section('title','管理者 ログイン')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('/css/admin.login.css') }}">
+<link rel="stylesheet" href="{{ asset('/css/admin_login.css') }}">
 @endsection
 
 @section('content')
 
-@include('components.adminheader')
+@include('components.admin_header')
     {{-- 認証失敗エラー --}}
     @if ($errors->has('email'))
         <p>{{ $errors->first('email') }}</p>
     @endif
 
-<form action="{{ route('admin.login.post') }}" method="POST">
+<form action="{{ route('admin.login.post') }}" method="POST" class="authenticate">
     @csrf
     <h1 class="title">管理者ログイン</h1>
 

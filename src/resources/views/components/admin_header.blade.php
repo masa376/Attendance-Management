@@ -3,7 +3,7 @@
         <a href="/"><img src="{{ asset('img/logo.png') }}" alt="ロゴ"></a>
     </div>
 
-    @if (!in_array(Route::currentRouteName(), ['register', 'admin/login', 'verification.notice']) )
+    @if (!in_array(Route::currentRouteName(), ['admin.login']))
 
 
     <nav class="header_nav">

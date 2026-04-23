@@ -8,7 +8,7 @@
 
 @section('content')
 
-@include('components.adminheader')
+@include('components.admin_header')
 {{-- 日付ナビゲーション --}}
 <a href="{{ route('admin.attendance.list', ['date' => $prevDate] )}}">前日</a>
 <span>{{ $currentDate }}</span>

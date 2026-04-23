@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\AttendanceUpdateRequest;
 use App\Models\Attendance;
+use App\Models\User;
 use Carbon\Carbon;
 
 class AdminAttendanceController extends Controller
@@ -102,7 +103,7 @@ class AdminAttendanceController extends Controller
 
         return view('admin.attendance.staff', [
             'user'         => $user,
-            'attendances'  => $attendances,
+            'attendance'  => $attendances,
             'currentMonth' => $current->isoFormat('YYYY年M月'),
             'prevMonth'    => $current->copy()->subMonth()->format('Y-m'),
             'nextMonth'    => $current->copy()->addMonth()->format('Y-m'),
